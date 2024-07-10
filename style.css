@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.bg-img{
+    width: 100%;
+    height: 100%;
+
+    background: url("https://png.pngtree.com/background/20220715/original/pngtree-light-blue-background-picture-picture-image_1626628.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    position: absolute;
+
+    z-index: -999;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+
+    font-family: Helvetica;
+}
+
+.content{
+
+    width: 40%;
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+.content p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.content>div{
+    margin-top: 20px;
+
+    display: flex;
+}
+
+.content>div>p{
+    margin: 0 10px;
+}
+
+.content input{
+    margin-right: 6px;   
+}
+
+.content input:hover{
+    cursor: pointer;
+}
+
+/*  */
+
+.monthly, .annually{
+    width: 80%;
+    height: 400px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    /* background-color: yellow; */
+    display: none;
+}
+
+.monthly div, .annually div{
+    width: 23%;
+    height: 100%;
+
+    padding: 20px;
+
+    border: 1px solid black;
+
+    background-color: rgb(227, 226, 226);
+
+    border-radius: 30px;
+
+}
+
+.monthly div:hover, .annually div:hover{
+    cursor: pointer;
+
+    background-color: navy;
+    color: rgb(180, 255, 230);
+
+    transition: 0.5s;
+    margin-top: -20px;
+
+}
+
+.monthly h1, .annually h1{
+    margin-bottom: 10px;
+}
+
+.monthly ul, .annually ul{
+    list-style-type: none;
+}
+
+.monthly li, .annually li{
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.monthly li:hover, .annually li:hover{
+    background-color: black;
+    color: azure;
+
+    padding-left: 10px;
+
+    border-radius: 5px;
+
+    transition: 0.5s;
+}
+
+.monthly p, .annually p{
+    padding-top: 5px;
+    border-top: 1px solid darkgreen;
+    font-size: 20px;
+}
+
+.monthly button, .annually button{
+    margin-top: 20px;
+    font-size: 15px;
+    /* padding: 10px; */
+
+    width: 150px;
+    height: 30px;
+
+    border: none;
+    border-radius: 20px;
+}
+
+.monthly button:hover, .annually button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.intro li:nth-child(2),.intro li:nth-child(3),.intro li:nth-child(4), .intro li:nth-child(5){
+    color: grey;
+}
+.intro li:nth-child(2):hover,.intro li:nth-child(3):hover,.intro li:nth-child(4):hover, .intro li:nth-child(5):hover{
+    color: black;
+    cursor: initial;
+    transition: 0s;
+}
+
+.basic li:nth-child(3), .basic li:nth-child(4), .basic li:nth-child(5) {
+    color: grey;
+}
+.basic li:nth-child(3):hover,.basic li:nth-child(4):hover, .basic li:nth-child(5):hover{
+    color: black;
+    cursor: initial;
+    transition: 0s;
+}
+
+.pro li:nth-child(5){
+    color: grey;
+}
+.pro li:nth-child(5):hover{
+    color: black;
+    cursor: initial;
+    transition: 0s;
+}
+
+
